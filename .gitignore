@@ -1,0 +1,3 @@
+# Ignore config and data directories
+config/
+data/
