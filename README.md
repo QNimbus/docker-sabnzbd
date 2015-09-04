@@ -7,4 +7,8 @@ cd docker-sabnzbd
 docker build --rm --no-cache -t qnimbus/docker-sabnzbd .
 ```
 
-docker run -d -h *your_host_name* -v /*your_config_location*:/config -v /*your_videos_location*:/data -v /etc/localtime:/etc/localtime:ro -p 8080:8080 -p 9090:9090 --restart=always qnimbus/docker-sabnzbd sabnzbd
+To start the container :
+
+```
+docker run --name sabnzbd -d -h ${HOSTNAME} -v /your/config/location:/config -v /your/download/location:/data -v /etc/localtime:/etc/localtime:ro -p 8080:8080 -p 9090:9090 --restart=always qnimbus/docker-sabnzbd sabnzbd
+```
