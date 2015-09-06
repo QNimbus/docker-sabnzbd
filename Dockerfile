@@ -1,4 +1,4 @@
-FROM qnimbus/docker-base:latest
+FROM qnimbus/docker-base:0.1
 MAINTAINER B. van Wetten <bas@vwn.io>
 
 #########################################
@@ -11,7 +11,8 @@ RUN chmod +x /tmp/install.sh && /tmp/install.sh
 ##                 CLEANUP             ##
 #########################################
 
-RUN rm -rf /tmp/*
+# Clean up APT when done.
+RUN apt-get clean -y && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /var/cache/*
 
 #########################################
 ##         EXPORTS AND VOLUMES         ##

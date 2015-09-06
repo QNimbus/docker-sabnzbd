@@ -28,5 +28,3 @@ rm -rf /etc/service/sshd /etc/service/cron /etc/service/syslog-ng /etc/my_init.d
 # Clean APT install files
 apt-get -qy autoremove
 apt-get clean -qy
-
-rm -rf /var/lib/apt/lists/* /var/cache/* /var/tmp/*
