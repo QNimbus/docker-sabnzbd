@@ -1,4 +1,4 @@
-FROM qnimbus/docker-base:0.1
+FROM qnimbus/docker-base:0.1.1
 MAINTAINER B. van Wetten <bas@vwn.io>
 
 #########################################
