@@ -5,7 +5,7 @@ show_help() {
 cat << EOF
 Usage: ${0##*/} [--help] [-h HOSTNAME] [-n NAME] [-c CONFIG_VOLUME] [-d DATA_VOLUME]
 
-Runs the qnimbus/sabnzbd container
+Runs the qnimbus/docker-sabnzbd container
  
     -n, --name   		Set name of the container (default is 'sabnzbd')
     -h, --hostname		Set the hostname of the container (default is docker host)
